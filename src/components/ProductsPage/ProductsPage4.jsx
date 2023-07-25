@@ -17,7 +17,7 @@ export default function ProductsPage4() {
     let [view, setView] = useState(0)
 
     let getData = async () => {
-        let res = await fetch(`http://localhost:3004/data`)
+        let res = await fetch(`https://amrutam-json-server.vercel.app/data`)
         let fetchedData = await res.json()
         setData(fetchedData)
     }
